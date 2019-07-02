@@ -18,5 +18,3 @@ def empirical_risk(feature_vector, labels, theta, theta_0=0, loss_function=hinge
         loss_parameter = labels[i] - (np.dot(theta, feature_vector[i, :]) + theta_0)
         risk_sum += loss_function(loss_parameter)
     return risk_sum/n
-
-
